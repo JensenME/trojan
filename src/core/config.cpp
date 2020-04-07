@@ -58,6 +58,9 @@ void Config::populate(const ptree &tree) {
     remote_port = tree.get("remote_port", uint16_t());
     target_addr = tree.get("target_addr", string());
     target_port = tree.get("target_port", uint16_t());
+    tunnel_addr = tree.get("tunnel_addr",string());
+    tunnel_port = tree.get("tunnel_port",uint16_t());
+    tunnel_mode = tree.get("tunnel_mode",false);
     map<string, string>().swap(password);
     if (tree.get_child_optional("password")) {
         for (auto& item: tree.get_child("password")) {
