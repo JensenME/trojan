@@ -39,6 +39,9 @@ public:
     uint16_t remote_port;
     std::string target_addr;
     uint16_t target_port;
+    std::string tunnel_addr;
+    uint16_t tunnel_port;
+    bool tunnel_mode;
     std::map<std::string, std::string> password;
     int udp_timeout;
     Log::Level log_level;
