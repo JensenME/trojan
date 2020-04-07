@@ -1,11 +1,17 @@
 # trojan修改版
 
 
-增加隧道选项
+**增加隧道选项**
+
+
 在设置里添加
+
 "tunnel_mode":true,
+
 "tunnel_addr":127.0.0.1,
+
 "tunnel_port":目标端口
+
 
 即可
 
